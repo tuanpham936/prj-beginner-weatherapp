@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  background: center/cover no-repeat, linear-gradient(to top, #0050c7, #0db4e7);
+  height: 100vh;
+}
+
+.container {
+  padding: 30px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.main-info {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.temp-box {
+  background: rgba(0,0,0,0.2);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.temp-box h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.temp-box h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.location {
+  font-size: 2rem;
+}
+
+.date, .condition {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.chart-box {
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 15px;
+  flex: 2;
+  min-width: 400px;
+}
+
+.forecast {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 90px;
+}
+
+.bottom-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.credit {
+  flex-basis: 100%;
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}

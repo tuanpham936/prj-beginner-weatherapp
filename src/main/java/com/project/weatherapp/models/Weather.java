@@ -6,6 +6,48 @@ public class Weather {
     private String condition;
     private double pressure;
     private double wind;
+    private double todayHumidity;
+    private double tomorrowHumidity;
+    private double afterTomorrowHumidity;
+    private double[] temperatureToday = new double[24];
+    private int[] willItRain = new int[3];
+    private double[] uv = new double[3];
+    public int[] getWillItRain() {
+        return willItRain;
+    }
+    public void setWillItRain(int[] willItRain) {
+        this.willItRain = willItRain;
+    }
+    public double[] getUv() {
+        return uv;
+    }
+    public void setUv(double[] uv) {
+        this.uv = uv;
+    }
+    public double getTodayHumidity() {
+        return todayHumidity;
+    }
+    public void setTodayHumidity(double todayHumidity) {
+        this.todayHumidity = todayHumidity;
+    }
+    public double getTomorrowHumidity() {
+        return tomorrowHumidity;
+    }
+    public void setTomorrowHumidity(double tomorrowHumidity) {
+        this.tomorrowHumidity = tomorrowHumidity;
+    }
+    public double getAfterTomorrowHumidity() {
+        return afterTomorrowHumidity;
+    }
+    public void setAfterTomorrowHumidity(double afterTomorrowHumidity) {
+        this.afterTomorrowHumidity = afterTomorrowHumidity;
+    }
+    public double[] getTemperatureToday() {
+        return temperatureToday;
+    }
+    public void setTemperatureToday(double[] temperatureToday) {
+        this.temperatureToday = temperatureToday;
+    }
     public double getTemperature() {
         return temperature;
     }

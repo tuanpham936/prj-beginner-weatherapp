@@ -1,0 +1,4 @@
+// This is Template file for application.properties file - Replace ${...} with your attributes
+spring.application.name=weatherapp
+apiweather.key=${Your API key}
+apiweather.url=${Your Weather API}

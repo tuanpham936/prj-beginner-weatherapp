@@ -20,13 +20,13 @@
                     <h1><i class="fa-solid fa-temperature-half"></i><span th:text="${temperature}" id="temperature"> ?</span>°C</h1>
                     <div class="location"><i class="fa-solid fa-location-crosshairs"></i> <span th:text="${location}" id="location">Location</span></div>
                     <div class="date"><i class="fa-solid fa-calendar"></i> <span id="weekday" class="weekday-text"></span></div>
-                    <div class="condition"><i class="fa-solid fa-smog"></i> <span th:text="condition" id="condition">Condition</span></div>
+                    <div class="condition"><i class="fa-solid fa-smog" id="condition-icon"></i> <span th:text="condition" id="condition">Condition</span></div>
                 </div>
 
                 <div class="forecast">
-                    <div class="card">Today <br/><i class="fa-solid fa-sun"></i><br/> Humidity: <span th:text="todayhumidity">?</span>%</div>
-                    <div class="card"><span>Tomorrow</span><br/><i class="fa-solid fa-cloud-sun"></i><br/> Humidity: <span th:text="tomorrowhumidity">?</span>%</div>
-                    <div class="card"><span>After Tomorrow</span> <br/><i class="fa-solid fa-cloud-rain"></i><br/> Humidity: <span th:text="aftertomorrowhumidity">?</span>%</div>
+                    <div class="card">Today <br/><i class="day-icon"></i><br/> Humidity:<br><span th:text="todayhumidity" id="today-humidity">?</span>%</div>
+                    <div class="card"><span>Tomorrow</span><br/><i class="day-icon"></i><br/> Humidity:<br><span th:text="tomorrowhumidity" id="tomorrow-humidity">?</span>%</div>
+                    <div class="card"><span>After Tomorrow</span> <br/><i class="day-icon"></i><br/> Humidity:<br><span th:text="aftertomorrowhumidity" id="after-tomorrow-humidity">?</span>%</div>
                 </div>
 
                 <div class="bottom-info">
